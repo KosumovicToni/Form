@@ -1,0 +1,269 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #3982e2;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+.slider {
+    margin: 0;
+    padding: 0;
+
+    overflow-y: hidden;
+	max-height: 1080px; /* approximate max height */
+
+	transition-property: all;
+	transition-duration: 1.5s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+
+}
+
+.slider.closed {
+    max-height: 0;
+}
+
+
+@keyframes sfumato {
+    0% { color: #ffffff05;}
+    100% { color: #ffffff;}
+}
+
+.titolo {
+    margin-top: 400px;
+    margin-bottom: 50px;
+
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 56px;
+
+    animation: sfumato 5s normal;
+    color: #ffffff;
+}
+
+.bottone {
+    margin: 0;
+    margin-bottom: 381px;
+    padding-top: 25px;
+
+    text-align: center;
+}
+.el_bottone {
+    margin: 0;
+    padding: 0.3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    color: #0872b4 ;
+    transition: color 1s ease-out 100ms
+
+}
+
+.el_bottone:hover {
+    color: #ffffff ;
+}
+.button:hover {
+    background-color: #66a3f19a;
+    border: 2px solid #0872b4;
+    box-shadow: 3px 3px 3px 0px #0872b4;
+}
+
+.button {
+    border: none;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 1s ease-out 100ms;
+}
+.bott {
+    border-radius: 12px;
+}
+
+.form {
+    margin: 0;
+    padding: 0;
+
+    overflow-y: hidden;
+	max-height: 0;
+
+	transition-property: all;
+	transition-duration: .5s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    color: #ffffff;
+}
+
+.form.opened {
+    max-height: 1080px;
+}
+
+.sfondocampi {
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+    background-color: #0872b4;
+    width: 40em;
+    border-radius: 12px;
+    margin-left: 37em;
+    margin-top: 10em;
+}
+
+.field {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.testoCampi {
+    margin: 0;
+    padding-left: 10px;
+}
+input {
+    border: 0;
+    border-radius: 12px;
+    box-sizing: border-box;
+    background-color: #c0cee0;
+    color: #044e7c;
+}
+
+input:focus-visible {
+    outline: none!important;
+    background-color: #b4d0f0;
+}
+
+select:focus-visible {
+    outline: none!important;
+}
+
+.primo {
+    margin-top: 10px;
+    margin-left: 90px;
+}
+
+.secondo {
+    margin-top: -36px;
+    margin-left: 370px;
+}
+
+.cognome {
+    margin-left: 265px !important;
+}
+
+.pass {
+    margin-left: 440px !important;
+}
+
+.DataNascita {
+    margin-top: -36px;
+    margin-left: 270px;
+}
+
+.Sesso {
+    margin-top: -36px;
+    margin-left: 390px;
+}
+
+.femmina {
+    margin-top: -36px;
+    margin-left: 80px;
+}
+
+.bottonifine {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.immagine {
+        width: 140px;
+        height: 16px;
+        font-size: 12px;
+}
+
+.ricarica {
+    margin-left: 112em;
+    margin-top: 20em;
+}
+
+@keyframes rotazione {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.ricaricaimg:hover {
+    animation: rotazione 1s linear;
+}
+
+.pointer {
+    background-color: #6dadf7;
+    cursor: pointer;
+    color: #ffffff;
+    transition: color 1s ease-out 100ms;
+    transition: background-color 1s ease-out 100ms;
+}
+
+.pointer:hover {
+    background-color: #ffffff;
+    color: #0872b4;
+}
+
+.codicefisc {
+    margin-top: -36px;
+    margin-left: 300px;
+}
+
+.manonprimo {
+    margin-left: 310px!important;
+}
+
+.terzo {
+    margin-left: 390px;
+}
+
+.quarto {
+    margin-left: 450px !important;
+}
+#elenco {
+    margin-left: 17px;
+    background-color: #c0cee0;
+    border-radius: 12px;
+    color: #044e7c;
+}
+
+.logo {
+
+    width: 60px;
+    height: 60px;
+    background-color: #044e7c;
+    border-radius: 12px;
+    cursor: pointer;
+    transition:  1s ease-out 100ms;
+    transition: width background-color color 1s ease-out 100ms;
+}
+
+.logo:hover {
+    background-color: #ffffff;
+    width: 190px;
+}
+
+.logoimg {
+    width: 60px;
+    height: 60px;
+}
+
+.logotxt {
+    margin-top: -40px;
+    margin-left: 60px;
+}
+
+.testologo {
+    color: #3982e2;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 190px;
+    height: 80px;
+}

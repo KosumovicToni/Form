@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="slider" id="slider">
+                <h1 class="titolo">Form</h1>
+                <div class="bottone">
+                    <button class="button bott" onclick="document.getElementById('slider').classList.toggle('closed');"><p class="el_bottone"  onclick="document.getElementById('form').classList.toggle('opened');">Inizia</p></button>
+                </div>
+            </div>
+            <div class="form" id="form">
+                <div class="testologo">
+                        <div class="logo">
+                            <img src="./img/logo.png" alt="logo" class="logoimg">
+                        </div>
+                        <p class="logotxt">Toni Kosumovic</p>
+                </div>
+                <div class="sfondocampi">
+                    <form name="datiUtente" action="profilo.html" method="GET" target="_blank" enctype="text/plain">
+                        <fieldset class="field">
+                            <diV class="primo" >
+                                <p class="testoCampi">Nome</p><input type="text"  size="18" name="nome" required="required">
+                            </diV>
+                            <div class="secondo cognome">
+                                <p class="testoCampi">Cogome</p><input type="text" size="18" name="cognome" required="required">
+                            </div>  
+                            <div class="secondo pass">
+                                <p class="testoCampi">Password</p><input type="password" name="password" size="10" required="required">
+                            </div>
+                            <div class="primo">
+                                <p class="testoCampi">Indirizzo</p><input type="text" name="indirizzo" size="25" required="required">
+                            </div>
+                            <div class="secondo manonprimo">
+                                <p class="testoCampi">N.Civ.</p><input type="text" name="nciv" size="5" pattern="^[0-9]{1,3}$" maxlength="3" required="required">
+                            </div>
+                            <div class="secondo terzo">
+                                <p class="testoCampi">CAP</p><input type="text" name="cap" size="5" pattern="^[0-9]{5}$" maxlength="5" required="required">
+                            </div>
+                            <div class="secondo quarto">
+                                <p class="testoCampi">Provincia</p>
+                                <select name="Provincie" id="elenco">
+                                    <option value="BL">BL</option>
+                                    <option value="PD">PD</option>
+                                    <option value="RO">RO</option>
+                                    <option value="TV">TV</option>
+                                    <option value="VE">VE</option>
+                                    <option value="VR">VR</option>
+                                    <option value="VI">VI</option>
+                                </select>
+                            </div>
+                            <div class="primo">
+                                <p class="testoCampi">Luogo di Nascita</p><input type="text" name="LuogoNascita" required="required">
+                            </div>
+                            <div class="DataNascita">
+                                <p class="testoCampi">Data di Nascita</p><input type="date" name="DataNascita" size="7" maxlength="10" value="dd/mm/aaaa" style="margin-left: 5px;" required="required">
+                            </div>
+                            <div class="Sesso">
+                                <p class="testoCampi">Maschio</p><input type="radio" name="Sesso" checked="checked" style="margin-left: 30px;" required="required">
+                                <div class="femmina"><p class="testoCampi">Femmina</p><input type="radio" name="Sesso" style="margin-left: 30px;" ></div>
+                            </div>
+                            <div class="primo">
+                                <p class="testoCampi">Email</p><input type="email" name="DataNascita" size="30" required="required">
+                            </div>
+                            <div class="secondo">
+                                <p class="testoCampi">Telefono</p><input type="tel" name="Telefono" size="20" value="+39 " required="required" pattern="^[+]{1}[0-9]{2}[\s]{1}[0-9]{10}$" maxlength="14">
+                            </div>
+                            <div class="primo">
+                                <p class="testoCampi">Partita Iva</p><input type="text" name="Part.iva" size="22" maxlength="11" pattern="^[0-9]{11}$" required="required">
+                            </div>
+                            <div class="codicefisc">
+                                <p class="testoCampi">Codice Fiscale</p><input type="text" name="CodiceFiscale" size="30" maxlength="16" pattern="^[a-zA-Z]{6}[0-9]{2}[a-zA-Z][0-9]{2}[a-zA-Z][0-9]{3}[a-zA-Z]$" required="required">
+                            </div>
+                            <div class="primo ">
+                                <p class="testoCampi">Logo</p><input class="immagine" type="file" name="logo" required="required">
+                            </div>
+                        </fieldset>
+                        <div class="bottonifine">
+                            <input class="pointer" type="submit"value="Consegna">
+                            <input class="pointer" type="reset" value="cancella">
+                        </div>
+                    </form>
+                </div>
+                <div class="ricarica">
+                    <a href="index.html"><img src="./img/refresh.png" class="ricaricaimg"></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
